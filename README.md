@@ -23,7 +23,7 @@ python make_features.py --dataset data --encodings HIMYMEmbedding.pickle
 --encodings = path to serialized db of facial encodings
 
 The facial features are made of 128 dimensions which plotted in 2D gives the following:
-
+<img src="https://github.com/Yinshangyi/Movies-FaceID/blob/master/img/TSNE.jpg" width="600" style="text-align:center;">
 
 ### Train the model
 Run the following command
@@ -44,3 +44,19 @@ python make_output_video.py --input_link videos/HIMYM.mp4 --output_link output/t
 --model_link", path to the model
 
 ## Screenshot and Video
+Here are some screenshots and a YouTube video you can check out to see the model in **action**
+
+<p float="left">
+  <img src="img/img1.png" width="250" />
+  <img src="img/img2.png" width="250" /> 
+  <img src="img/img3.png" width="250" />
+</p>
+
+<p float="left">
+  <img src="img/img4.png" width="250" />
+  <img src="img/img5.png" width="250" /> 
+  <img src="img/img6.png" width="250" />
+</p>
+
+**YouTube Video**
+https://www.youtube.com/watch?v=FFSCjMLhvjk&t=4s
