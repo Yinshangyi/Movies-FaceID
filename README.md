@@ -22,6 +22,9 @@ python make_features.py --dataset data --encodings HIMYMEmbedding.pickle
 --dataset : path to input directory of faces + images 
 --encodings = path to serialized db of facial encodings
 
+The facial features are made of 128 dimensions which plotted in 2D gives the following:
+
+
 ### Train the model
 Run the following command
 ```bash
@@ -29,6 +32,8 @@ python train_faces.py --data_link HIMYMEmbedding.pickle --output_link model.pick
 ```
 --dataset : path to input directory of faces + images"
 --output_link : path to output model
+The model used in a K-Nearest-Neigbor model (KNN) which I believe is enough for such a task, but feel free to use other more advanced models such as SVM or Deep Neural Networks.
+In order to classify a face as "unknown" I have use the L2 distance with a certain threshold. You might have to adjust it if you feel that too much faces have been classified as "unknown" while they shouldn't have.
 
 ### Generate the video
 ```bash
@@ -38,4 +43,4 @@ python make_output_video.py --input_link videos/HIMYM.mp4 --output_link output/t
 --output_link : path to output video file
 --model_link", path to the model
 
-
+## Screenshot and Video
