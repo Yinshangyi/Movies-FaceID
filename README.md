@@ -10,6 +10,22 @@ The way it works is the following:
 ## How to generate a video with FaceID
 Generate a video based on any input video in quite easy. The most demanding tasks will be the gather the data, the rest of it is just some commands to run through your terminal.
 
+### Setup the environment
+First of all you should install the necessary Python packages. You may want to create a virtual environment dedicated for your project, if you use conda, you can do the following:
+```bash
+conda create -n yourenvname python=x.x anaconda
+```
+And then you activate your newly created environment
+```bash
+source activate yourenvname
+```
+Creating a virtual environment is optional but makes things cleaner.  
+Then you can install all the package at once by running the following command:
+```bash
+pip install -r requirements.txt
+```
+Note that some packages might not be necessary, feel free to install package individually if you wish to.
+
 ### Gather the data
 You should gather at least 50 different pictures for each of the character you want the model to learn about. Of course the more you have, the better it would be, however you should be careful to have a balanced dataset (all the characters should have more or less the same number of picture).
 **Important** The images should be organised in folders, one folder per character.
